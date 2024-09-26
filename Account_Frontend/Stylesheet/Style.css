@@ -1,0 +1,55 @@
+div.newUser{
+    position :absolute;
+    left : 60%; top : 10px; width :40%; height : 260px;
+    /* border : 2px solid red; */
+    background-color: antiquewhite;
+}
+div.newUser span{
+    position : absolute;
+    left :0px; top : 10px; width : 100%;
+    text-align : center;
+    font-family : "Roboto-Bold";
+    font-size : 24px
+    
+}
+form{
+    position :absolute;
+    left : 25%; width :50%; top : 20px;
+}
+
+input.inputBox{
+    font-family : "Roboto-Bold";
+    font-size : 24px
+}
+
+#Password_Error_Text{
+    position :absolute;
+    left : 0px; width :100%; top : 210px;
+    font-family : "Roboto-Bold";
+    font-size : 24px
+}
+
+
+#SendLogin{
+    position :absolute;
+    left : 0px; width :100%; top : 150px;
+    text-align : center;
+    font-family : "Roboto-Bold";
+    font-size : 24px
+}
+
+label{
+    font-family : "Roboto-Bold";
+    font-size : 24px
+}
+
+span.signin{
+    position :absolute;
+    left : 60%; width : 10%; top : 280px;
+    border-radius : 5px;
+    border : 3px solid red;
+    font-family : "Roboto-Bold";
+    font-size : 24px;
+    text-align : center;
+    cursor : pointer;
+}

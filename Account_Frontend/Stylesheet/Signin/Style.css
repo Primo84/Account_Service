@@ -1,0 +1,67 @@
+div.newUser{
+    position :absolute;
+    left : 25%; top : 80px; width :50%; height : 450px;
+    /* border : 2px solid red; */
+    background-color: antiquewhite;
+}
+div.newUser span{
+    position : absolute;
+    left :0px; top : 10px; width : 100%;
+    text-align : center;
+    font-family : "Roboto-Bold";
+    font-size : 24px
+    
+}
+form{
+    position :absolute;
+    left : 25%; width :50%; top : 60px;
+}
+
+input.inputBox{
+    font-family : "Roboto-Bold";
+    font-size : 24px
+}
+
+
+
+#Password_Error_Text{
+    position :absolute;
+    left : 0px; width :100%; top : 420px;
+    font-family : "Roboto-Bold";
+    font-size : 24px
+
+}
+
+#Email_Error_Text{
+    position :absolute;
+    left : 0px; width :100%; top : 420px;
+    font-family : "Roboto-Bold";
+    font-size : 24px
+
+}
+
+#Email_Error_Text_1{
+    position :absolute;
+    left : 0px; width :100%; top : 420px;
+    font-family : "Roboto-Bold";
+    font-size : 24px
+
+}
+
+#SendLogin{
+    position :absolute;
+    left : 15%; width :30%; top : 320px;
+    font-family : "Roboto-Bold";
+    font-size : 24px
+}
+#CancelLogin{
+    position :absolute;
+    left : 55%; width :30%; top : 320px;
+    font-family : "Roboto-Bold";
+    font-size : 24px
+}
+
+label{
+    font-family : "Roboto-Bold";
+    font-size : 24px
+}

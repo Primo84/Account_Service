@@ -1,0 +1,26 @@
+{
+  "name": "netshop_backend",
+  "version": "1.0.0",
+  "description": "Server for Net Shoping  ",
+  "main": "NetShop.js",
+  "author": "Przemysław Chliszcz",
+  "license": "ISC",
+  "scripts": {
+    "start" :  "node --inspect NetShop.js"
+  },
+  
+  "languageWorkers:node:arguments": "--inspect=5858",
+  "engines": {
+  "node": "20.x"
+},
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cookie-parse": "^0.4.0",
+    "email-validator": "^2.0.4",
+    "express": "^4.19.2",
+    "legacy-encoding": "^3.0.0",
+    "nodemailer": "^6.9.14",
+    "postgres": "^3.4.4",
+    "uuid4": "^2.0.3"
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC>
+
+<HTML>
+    <HEAD>
+
+        <TITLE>
+            Strona Logowania
+        </TITLE>
+
+        <meta name = "viewport" content = "width=device-width, height=device-height, initial-scale=1.0">
+        <meta http-equiv = "content-type" content = "text/html; charset = utf-8">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script src="./Scripts/Config.js" type="Text/JavaScript"></script>
+   
+        <script src="./Scripts/Login.js" type="Text/JavaScript"></script>
+
+        <link rel = "stylesheet" href = "./Stylesheet/Style.css" type = "text/css" media = "ALL AND (min-width:1200px)">
+        <link rel = "stylesheet" href = "./Stylesheet/Style_1200.css" type = "text/css" media = "ALL AND (min-width:1000px) AND (max-width:1200px)">
+        <link rel = "stylesheet" href = "./Stylesheet/Style_1000.css" type = "text/css" media = "ALL AND (min-width:800px) AND (max-width:1000px)">
+        <link rel = "stylesheet" href = "./Stylesheet/Style_800.css" type = "text/css" media = "ALL AND (min-width:600px) AND (max-width:800px)">
+        <link rel = "stylesheet" href = "./Stylesheet/Style_600.css" type = "text/css" media = "ALL AND (min-width:400px) AND (max-width:600px)">
+        <link rel = "stylesheet" href = "./Stylesheet/Style_400.css" type = "text/css" media = "ALL AND (min-width:320px) AND (max-width:400px)">
+        <link rel = "stylesheet" href = "./Stylesheet/Style_320.css" type = "text/css" media = "ALL AND (max-width:320px)">
+    
+
+    </HEAD>
+
+    <BODY>
+
+       <h1>Main Page</h1>
+        <br><br>
+
+        <span class = "signin" onclick = "signup()">Signup</span>
+
+        <br><br>
+
+        <div class = "newUser">
+
+            <FORM method = "POST" id="LoginForm" action="https:\\netshopserver.azurewebsites.net\Login"  onsubmit="formLogin()" enctype="multipart/form-data">
+
+                <label for = "user">Adres Email :</label><br>
+                <input type="text" placeholder="Email" id="user" class = "inputBox">
+            
+                <br><br>
+            
+                <label for = "user">Password :</label><br>
+                <input type="password" id = "password" class = "inputBox">
+
+                <input type="button" id="SendLogin" value="Loguj" onclick="formLogin()">
+
+            </FORM>
+
+            <span id = "Password_Error_Text" style="display:none">Błędne hasło lub użytkownik</span>
+
+        </div>
+
+    </BODY>
+</HTML>

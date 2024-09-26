@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC>
+
+<HTML>
+    <HEAD>
+
+        <meta name = "viewport" content = "width=device-width, height=device-height, initial-scale=1.0">
+        <meta http-equiv = "content-type" content = "text/html; charset = utf-8">
+
+        <TITLE>
+            Nowy Użytkownik
+        </TITLE>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./Scripts/Config.js" type="Text/JavaScript"></script>
+        <script src="./Scripts/Login.js" type="Text/JavaScript"></script>
+
+        <link rel = "stylesheet" href = "./Stylesheet/Signin/Style.css" type = "text/css" media = "ALL AND (min-width:1200px)">
+        <link rel = "stylesheet" href = "./Stylesheet/Signin/Style_1200.css" type = "text/css" media = "ALL AND (min-width:1000px) AND (max-width:1200px)">
+        <link rel = "stylesheet" href = "./Stylesheet/Signin/Style_1000.css" type = "text/css" media = "ALL AND (min-width:800px) AND (max-width:1000px)">
+        <link rel = "stylesheet" href = "./Stylesheet/Signin/Style_800.css" type = "text/css" media = "ALL AND (min-width:600px) AND (max-width:800px)">
+        <link rel = "stylesheet" href = "./Stylesheet/Signin/Style_600.css" type = "text/css" media = "ALL AND (min-width:400px) AND (max-width:600px)">
+        <link rel = "stylesheet" href = "./Stylesheet/Signin/Style_400.css" type = "text/css" media = "ALL AND (min-width:320px) AND (max-width:400px)">
+        <link rel = "stylesheet" href = "./Stylesheet/Signin/Style_320.css" type = "text/css" media = "ALL AND (max-width:320px)">
+    </HEAD>
+
+    <BODY>
+        <div class = "newUser">
+            <span>
+                Nowy Użytkownik
+            </span>
+            
+
+            <br>
+            <br>
+
+            <FORM method = "POST" id="LoginForm" action="https:\\netshopserver-71e680eb7b57.herokuapp.com\Signin"  onsubmit="formLogin()" enctype="multipart/form-data">
+            
+                <label for = "name">Imię i Nazwisko :</label><br>
+                <input type="text" id = "name" class = "inputBox">
+            
+                <br><br>
+
+                <label for = "user">Adres Email :</label><br>
+                <input type="text" placeholder="Email" id="user" class = "inputBox">
+            
+                <br><br>
+            
+                <label for = "user">Password :</label><br>
+                <input type="password" id = "password" class = "inputBox">
+            
+                <br><br>
+            
+                <label for = "user">Retype Password :</label><br>
+                <input type="password" id = "password_retype" class = "inputBox">
+            
+                <br><br>
+            
+                <input type="button" id="SendLogin" value="Utwórz" onclick="formSignin()">
+
+                <input type="button" id="CancelLogin" value="Anuluj" onclick="formCancel()">
+
+            </FORM>
+
+            <span id = "Password_Error_Text" style="display:none" >Hasła się nie zgadzaję</span>
+            <span id = "Email_Error_Text" style="display:none" >Użytkownik już istnieje</span>
+            <span id = "Email_Error_Text_1" style="display:none" >Błędny adres email</span>
+
+        </div>
+
+    </BODY>
+</HTML>
